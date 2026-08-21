@@ -7,7 +7,7 @@
 [![veRL 0.6.1](https://img.shields.io/badge/veRL-0.6.1-555555.svg)](https://github.com/volcengine/verl)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-D22128.svg)](LICENSE)
 
-The recommended GitHub repository name is `grpo-longchain-multitool-agents`, matching the project source directory. Historical SwanLab runs remain under `agentic-grpo-longhorizon`, so the dashboard URL is unchanged.
+
 
 GRPO training and optimization for long-horizon, multi-turn, multi-tool agents. A systematic τ-bench airline ablation identifies reward saturation, train-coverage bias, and per-turn reasoning collapse in vanilla GRPO. The proposed **PRM-Lite + LATA** combination improves how local process signals reach policy gradients.
 

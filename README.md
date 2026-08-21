@@ -7,7 +7,7 @@
 [![veRL 0.6.1](https://img.shields.io/badge/veRL-0.6.1-555555.svg)](https://github.com/volcengine/verl)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-D22128.svg)](LICENSE)
 
-GitHub 仓库建议使用 `grpo-longchain-multitool-agents`。内部代码目录与该仓库名保持一致。历史 SwanLab 项目名仍为 `agentic-grpo-longhorizon`，因此训练曲线链接未改。
+
 
 面向长链路、多轮、多工具智能体的 GRPO 训练与优化项目。在 τ-bench airline 的系统性消融中，Vanilla GRPO 出现奖励饱和、训练集偏置和逐轮推理退化；本项目通过 **PRM-Lite 过程奖励 + LATA 长度感知优势归一化** 改善局部质量信号的传播。
 
