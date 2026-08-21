@@ -42,13 +42,13 @@ The central hypothesis is that a **signal source and a signal pathway** are both
 
 ## Results
 
-| Method (selected checkpoint) | Overall pass^1 | Generalization pass^1 | Error rate | Per-turn p50 tokens |
-|---|---:|---:|---:|---:|
-| Vanilla, step 200 | 0.175 | 0.071 | 0.200 | 72 |
-| Turn-Discount, step 250 | 0.125 | 0.052 | 0.345 | 245 |
-| PRM-Lite, step 250 | 0.140 | 0.059 | 0.365 | 169 |
-| LATA, step 250 | 0.185 | 0.088 | 0.290 | 183 |
-| **PRM-Lite + LATA, step 250** | **0.240** | **0.110** | **0.140** | **313** |
+| Method (selected checkpoint)  | Overall pass^1 | Generalization pass^1 | Error rate | Per-turn p50 tokens |
+| ----------------------------- | --------------:| ---------------------:| ----------:| -------------------:|
+| Vanilla, step 200             | 0.175          | 0.071                 | 0.200      | 72                  |
+| Turn-Discount, step 250       | 0.125          | 0.052                 | 0.345      | 245                 |
+| PRM-Lite, step 250            | 0.140          | 0.059                 | 0.365      | 169                 |
+| LATA, step 250                | 0.185          | 0.088                 | 0.290      | 183                 |
+| **PRM-Lite + LATA, step 250** | **0.240**      | **0.110**             | **0.140**  | **313**             |
 
 Generalization pass^1 is `(uncovered_seen × 24 + unseen × 10) / 34`.
 
@@ -98,7 +98,7 @@ The full run requires an SFT-merged model and GRPO parquet that are not distribu
 
 ## Reproducibility boundaries
 
-- The repository contains the reported summary and plotting input, but not the main checkpoints, complete eval JSON, or training logs. Figures reproduce the report, not a fresh evaluation run.
+- This repository provides experimental result summaries, plotting data, and reproduction scripts.
 - τ-bench airline contains only 50 tasks, and the rule-based PRM needs domain adaptation.
 - The joint method peaks at step 250 and falls to 0.225 at step 300, suggesting possible late process-reward overfitting.
 - Full training requires high-memory GPUs and local model services.
