@@ -1,0 +1,16 @@
+experiment,step,overall_pass1,generalization_pass1,covered_pass1,uncovered_pass1,unseen_pass1,per_turn_p50_tokens,error_rate,selection,status,source
+Vanilla,150,0.225,0.110,0.453,0.094,0.175,77,0.010,peak,reported,ablation_diagnosis_report_section_6_1
+Vanilla,200,0.175,0.071,0.391,0.042,0.150,72,0.200,ablation_baseline,reported,ablation_diagnosis_report_section_6_1
+Turn-Discount,200,0.135,0.052,0.297,0.031,0.125,181,0.285,progression,reported,ablation_diagnosis_report_section_6_1
+Turn-Discount,250,0.125,0.052,0.281,0.021,0.125,245,0.345,selected,reported,ablation_diagnosis_report_section_6_1
+Turn-Discount,300,0.125,0.052,0.281,0.021,0.125,245,0.345,progression,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite,50,0.091,0.016,0.116,0.016,-0.008,132,0.324,progression,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite,200,0.130,0.052,0.297,0.021,0.100,155,0.350,progression,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite,250,0.140,0.059,0.312,0.031,0.125,169,0.365,selected,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite,300,0.140,0.059,0.312,0.031,0.125,169,0.365,progression,reported,ablation_diagnosis_report_section_6_1
+LATA,200,0.155,0.059,0.359,0.042,0.100,166,0.310,progression,reported,ablation_diagnosis_report_section_6_1
+LATA,250,0.185,0.088,0.422,0.042,0.150,183,0.290,selected,reported,ablation_diagnosis_report_section_6_1
+LATA,300,0.190,0.095,0.440,0.050,0.160,190,0.285,progression,reported_estimate,ablation_diagnosis_report_section_6_1_and_legacy_plot_comment
+PRM-Lite + LATA,200,0.215,0.096,0.469,0.073,0.150,322,0.170,progression,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite + LATA,250,0.240,0.110,0.516,0.083,0.175,313,0.140,selected,reported,ablation_diagnosis_report_section_6_1
+PRM-Lite + LATA,300,0.225,0.110,0.469,0.094,0.150,280,0.120,progression,reported,ablation_diagnosis_report_section_6_1
